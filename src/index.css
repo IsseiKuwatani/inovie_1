@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-gray-900;
+  }
+}
+
+@layer components {
+  .sidebar-item {
+    @apply flex items-center px-6 py-3 text-sm transition-colors;
+  }
+  
+  .sidebar-item-active {
+    @apply bg-indigo-50 text-indigo-600 border-r-4 border-indigo-600;
+  }
+}
